@@ -1,0 +1,10 @@
+spring:
+  r2dbc:
+    url: r2dbc:h2:mem:///testdb;MODE=PostgreSQL
+    username: sa
+    password: ''
+
+r2dbc:
+  migrate:
+    resources-paths:
+      - classpath:/db/migration/*.sql
